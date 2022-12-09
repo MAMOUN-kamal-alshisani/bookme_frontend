@@ -1,6 +1,6 @@
 import './scss/navbar.css'
 import { AuthContext } from "../../context/auth_context";
-import {useState,useContext} from 'react'
+import {useContext} from 'react'
 import Login from '../../components/signin/login';
 import SignUp from '../../components/signup/signUp';
 import {Link } from "react-router-dom";

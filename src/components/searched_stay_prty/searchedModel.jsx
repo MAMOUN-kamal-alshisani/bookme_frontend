@@ -1,7 +1,6 @@
 import { FaArrowRight } from 'react-icons/fa'
 import { FaArrowLeft } from 'react-icons/fa'
 import { GrClose } from 'react-icons/gr'
-
 import {Button} from 'react-bootstrap';
 import './scss/searched.css'
 function Modals({basicModal,

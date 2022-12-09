@@ -4,14 +4,14 @@ import Header from "../../ui_components/header/header";
 import FooterMail from "../../ui_components/footer_mail_list/footermail";
 import Footer from "../../ui_components/footer/footer";
 import ReserverPt from '../reserve/PreserveModal'
-// import React, { useState } from "react";
 import Modals from "./searchedModel";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect,useContext } from "react";
-import axios from "axios";
 import {SearchContext} from '../../context/searchcontext'
 import {AuthContext} from '../../context/auth_context'
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 const imgs = [
   {
     src: "https://tse1.mm.bing.net/th?id=OIP.cOUMcmla1ZH-M45s9DVD2wHaE8&pid=Api&P=0",
