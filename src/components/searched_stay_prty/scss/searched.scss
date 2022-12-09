@@ -1,0 +1,223 @@
+@import "../../../variables/_variables.scss";
+// @import 'bootstrap/dist/css/bootstrap.min.css';
+
+.searchList {
+  position: $relative;
+  top: 0px;
+  @include flex(flex, center, nowrap, column);
+  margin-top: 40px;
+  align-items: $alignItems;
+  text-transform: $captext;
+  .searchContainer {
+    @include flex(flex, center, nowrap, column);
+    width: 100%;
+    max-width: 1024px;
+    align-items: flex-start;
+    position: $relative;
+
+    .btnContainer {
+      position: $absolute;
+      right: 0px;
+      top: 0px;
+      .bookingBtn {
+        height: 40px;
+        padding: 6px;
+        border-radius: 6px;
+        margin: 0px 10px;
+        border: $border;
+        cursor: $cursor;
+        letter-spacing: 2px;
+        font-weight: $fontweight;
+
+        background-color: $primary_bg_clr;
+        color: $primary_clr;
+        &:hover {
+          box-shadow: 0px 0px 5px 0px $primary_clr2;
+          color: $primary_bg_clr3;
+        }
+      }
+    }
+  }
+  .searchItem {
+    @include flex(flex, center, nowrap, column);
+    margin-bottom: 10px;
+  }
+  .LocationImgs {
+    @include flex(flex, space-around, wrap, row);
+    gap: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    .imgs {
+      flex: 1;
+      object-fit: cover;
+      width: 330px;
+      height: 200px;
+      border-radius: $border-radius;
+    }
+  }
+  .SearchLocation {
+    color: $primary_clr4;
+  }
+  .LocationDesc {
+    padding: 5px 0px;
+    color: $primary_bg_clr;
+  }
+  .Desc {
+    color: cornflowerblue;
+  }
+
+  .pDescCont {
+    @include flex(flex, space-between, nowrap, row);
+
+    width: 100%;
+    max-width: 1024px;
+    padding: 30px 0px;
+
+    .pDesc_Div {
+      width: 100%;
+      h2 {
+        padding-bottom: 20px;
+      }
+      p {
+        padding:5px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+       line-height: 25px;
+       color: rgb(47, 81, 148);
+      }
+    }
+    .offerContainer {
+      border-radius: $border-radius;
+      @include flex(flex, space-around, wrap, column);
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.427);
+      color: $primary_clr;
+      width: 30%;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.622);
+      }
+      h3 {
+        padding: 10px 0px;
+      }
+      h2 {
+        padding: 10px 0px;
+      }
+      button {
+        border-radius: $border-radius;
+        color: $primary_clr;
+        background-color: rgba(220, 20, 60, 0.377);
+        border: $border;
+        height: 30px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(220, 20, 60, 0.683);
+        }
+      }
+    }
+  }
+}
+
+.modalContainer {
+    @include flex(flex, center, nowrap, column);
+  position: sticky;
+  top: 0px;
+  align-items: $alignItems;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(72, 71, 71, 0.53);
+  z-index: 9;
+  img {
+    object-fit: cover;
+    border-radius: 6px;
+    width: 800px;
+    height: 80%;
+  }
+  .closeBtn {
+    @include flex(flex, center, nowrap, row);
+
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: $cursor;
+    background-color:rgba(255, 255, 255, 0.431);
+    border-radius: 50%;
+    border: transparent;
+    font-size: large;
+
+    &:hover{
+        background-color:rgba(255, 255, 255, 0.484);
+
+        }
+    svg{
+        path{
+          stroke:rgba(255, 255, 255, 0.493);
+          stroke-width: 4;
+
+          &:hover{
+          stroke:black;
+
+          }
+        }
+     
+    }
+   
+  }
+  .modalBtnContainer {
+    @include flex(flex, center, nowrap, row);
+    text-align: $alignItems;
+    width: 800px;
+  
+    padding: 2px;
+
+    .modalBtn {
+      padding: 5px;
+      width: 80%;
+      height: 35px;
+      background-color: rgba(0, 0, 0, 0.503);
+      color: rgba(255, 255, 255, 0.508);
+      font-size: large;
+      border: 2px solid rgba(0, 153, 255, 0.49);
+      cursor: $cursor;
+
+      &:hover {
+        background-color: black;
+        color: $primary_clr3;
+        border: 1px solid rgb(0, 153, 255);
+      }
+    }
+    .picDir {
+      font-size: larger;
+      color: rgba(255, 255, 255, 0.508);
+      width: 10%;
+      height: 35px;
+      background-color: rgba(0, 0, 0, 0.503);
+      border: 2px solid rgba(220, 20, 60, 0.536);
+
+      cursor: $cursor;
+
+      &:hover {
+        background-color: $primary_clr10;
+        color: $primary_clr;
+        border: 1px solid $primary_clr3;
+      }
+    }
+    .leftBtn {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+    .rightBtn {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+}
+
+// .dm{
+//     position: relative;
+//     top: 0;
+// }

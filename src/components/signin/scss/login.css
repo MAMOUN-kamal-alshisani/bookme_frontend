@@ -1,0 +1,103 @@
+.login {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100vh;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background-image: linear-gradient(grey, black);
+}
+.login .lContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  width: 40%;
+  height: 60vh;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 1024px;
+  top: 30%;
+  gap: 10px;
+  background-color: #2196f3;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 6px;
+}
+.login .lContainer .formHeader {
+  color: white;
+}
+.login .lContainer input {
+  width: 200px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 15px;
+}
+.login .lContainer input::-moz-placeholder {
+  padding: 10px;
+}
+.login .lContainer input:-ms-input-placeholder {
+  padding: 10px;
+}
+.login .lContainer input::placeholder {
+  padding: 10px;
+}
+.login .lContainer input:focus {
+  outline: 1px solid crimson;
+}
+.login .lContainer .loginBtn {
+  width: 200px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #1d2429;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.login .lContainer .loginBtn:hover {
+  background-color: #2f353a;
+}
+.login .lContainer .form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+.login .lContainer .signUpContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.login .lContainer .signUpContainer p {
+  color: white;
+  text-shadow: 1px 0px 0px grey;
+}
+.login .lContainer .signUpContainer button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 2px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  text-shadow: 1px 0px 0px grey;
+  transition: 0.5s ease-in-out;
+}
+.login .lContainer .signUpContainer button:hover {
+  color: azure;
+}
+.login .lContainer .signUpContainer button .arrowIcon {
+  font-size: large;
+  margin-top: 5px;
+}/*# sourceMappingURL=login.css.map */

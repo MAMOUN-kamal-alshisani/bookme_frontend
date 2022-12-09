@@ -1,0 +1,54 @@
+.FListProperty {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1024px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.FListProperty .FListItem {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  word-spacing: 2px;
+}
+.FListProperty .FListItem .fpImg {
+  flex: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 6px;
+}
+.FListProperty .FListItem .fpName {
+  font-size: 24px;
+}
+.FListProperty .FListItem .fpCity {
+  color: grey;
+  font-size: 16px;
+}
+.FListProperty .FListItem .fpPrice {
+  color: crimson;
+}
+.FListProperty .FListItem .fpRating {
+  padding-left: 5px;
+}
+.FListProperty .FListItem .fpRating .fpBtn {
+  font-weight: bold;
+  width: 35px;
+  height: 25px;
+  color: white;
+  background-color: #607d8b;
+  border: transparent;
+  border-radius: 6px;
+}
+.FListProperty .FListItem .fpRating .fpGrade {
+  color: grey;
+  margin: 7px;
+}/*# sourceMappingURL=featuredland.css.map */

@@ -1,0 +1,17 @@
+@import '../../../variables/_variables';
+.homeMain{
+@include flex(flex,unset,nowrap,column);
+    margin-top: 70px;
+    align-items: $alignItems;
+    // gap: 30px;
+    // background-color: aquamarine;
+}
+
+.homeTitle{
+  margin-top:25px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+    width: 100%;
+    max-width: 1024px;
+    font-size: 20px;
+}

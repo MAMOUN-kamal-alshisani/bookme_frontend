@@ -1,0 +1,154 @@
+@import '../../../variables/_variables.scss';
+
+.reserver{
+    backdrop-filter: blur(10px);
+    @include flex(flex,center,nowrap,row);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.149);
+    width: 100%;
+    height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 99;
+overflow: auto;
+.reserveModalContainer{
+    border-radius: $border-radius;
+    background-color: #000000c7;
+    border: 1px solid #004979;
+width: 750px;
+    height: 500px;
+    overflow-x: auto;
+
+    .iconDiv{
+    @include flex(flex,space-between,nowrap,row);
+position: absolute;
+top: 40px;
+right: 80px;
+    }
+.closeIcon{
+    margin:5px;
+    // background-color: $border;
+    // background-color: $primary_clr4;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $primary_clr;
+    border-radius: 50%;
+    padding: 5px;
+cursor: $cursor;
+transition: ease-in-out 1s;
+&:hover{
+    border: 2px solid crimson 
+}
+    path{
+        stroke: $primary_clr;
+transition: ease-in-out 1s;
+    
+    }
+    &:hover path{
+        stroke: crimson;
+    }
+    
+}
+.SroomHeader{
+    padding-left:10px;
+    font-size: large;
+    font-weight: bold;
+    color: $primary_clr10;
+}
+    .roomList{
+        padding: 40px;
+display: flex;
+width: 400px;
+min-width: fit-content;
+// border-bottom: 1px solid royalblue;
+box-shadow: 0px 0px 2px 0px grey;
+.roomItems{
+    letter-spacing: 1px;
+
+    .roomItems p,h1,h2{
+        padding: 5px;
+                }
+
+.roomTitle{
+    color: rgb(0, 133, 249);
+    text-shadow: 1px 0px 0px grey;
+}
+                .roomDesc{
+                    color: white;
+                    text-shadow: 1px 0px 0px grey;
+                    line-height:25px;
+                    padding-bottom: 10px;
+                }
+
+                .roomMax{
+                    padding-bottom:5px;
+                    color: #3f51b5;
+                    font-weight: bold;
+    text-shadow: 1px 0px 0px rgb(16, 66, 203);
+
+                }
+}
+
+
+
+        .roomN{
+            margin-top: 15px;
+            @include flex(flex,space-evenly,wrap,row);
+            // font-size: large;
+            align-items: center;
+            align-content: flex-start;
+            font-weight: bold;
+            color:crimson;
+
+            input.checkbox{
+cursor: pointer;
+width: 15px;
+height: 15px;
+                &:hover{
+
+                    // box-shadow: 1px 0px 10px 0px red
+                }
+            }
+        }
+    }
+.btnContainer{
+@include flex(flex,space-between,nowrap,row);
+padding:10px;
+    .reserveBtn{
+        // height:30px;
+        width: 100px;
+        height: 27px;
+        cursor: $cursor;
+        border-radius: 6px;
+        color: $primary_clr;
+        border: 1px solid $primary_clr4;
+        background-color: $primary_bg_clr;
+        &:hover{
+           
+            background-color: $primary_bg_clr2;
+            color: $primary_clr;
+            border: 1px solid $primary_clr4;
+    
+        }
+    }
+    .closeBtn{
+        width: 100px;
+        height: 27px;
+        cursor: $cursor;
+        border-radius: 6px;
+        color: $primary_clr;
+        border: 1px solid $primary_clr4;
+        background-color: $primary_clr14;
+
+        &:hover{
+
+            background-color: $primary_clr3;
+
+
+        }
+    }
+}
+
+}
+}

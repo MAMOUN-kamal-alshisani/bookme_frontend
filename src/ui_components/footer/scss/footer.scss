@@ -1,0 +1,22 @@
+@import '../../../variables/_variables.scss';
+
+footer{
+    width: 100%;
+    background-color: $primary_bg_clr3;
+    align-items: center;
+    @include flex(flex,center,nowrap,column);
+
+.fLists{
+
+    @include flex(flex,space-around,nowrap,row);
+    width:100%;
+    max-width: 1024px
+}
+    .listMenu{
+        padding:10px
+    }
+
+    .copyright{
+        text-align: center;
+    }
+}

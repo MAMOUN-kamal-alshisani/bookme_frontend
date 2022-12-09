@@ -1,0 +1,196 @@
+@import '../../../variables/variables';
+.header{
+    z-index: 2;
+    position: $relative;
+
+    text-transform: $captext;
+    padding-bottom: 20px;
+    height: 100%;
+    min-height: fit-content;
+    background-color:$primary_bg_clr ;
+    @include flex(flex,none,nowrap,column);
+
+    .headerList{
+        @include flex(flex,space-around,wrap,row);
+        width: 100%;
+        height: 100%;
+   
+        .listItems{
+            @include flex(flex,none,nowrap,column);
+            align-items: $alignItems;
+.icons{
+    width:1.5rem;
+    height: 1.5rem;
+    color:$primary_clr;
+
+    path{
+        stroke: white;
+    }
+}
+.icon_text{
+    letter-spacing: $textspace;
+    font-size: large;
+    color:$primary_clr;
+}
+        }
+
+    }
+
+    .textContainer{
+        @include flex(flex,none,wrap,column);
+        align-items: $alignItems;
+        color: $primary_clr;
+       padding:20px 0px;
+        .headerTitle{
+          letter-spacing: $textspace;
+          word-spacing: 5px;
+          text-shadow:$textshadow; 
+        }
+.headerText{
+word-spacing: 2px;
+padding:10px 0px;
+
+}
+.headerBtn{
+    border-radius: $border-radius;
+    border: $border;
+    cursor: $cursor;
+    letter-spacing: $textspace;
+background-color: $primary_bg_clr;
+color: $primary_clr3;
+font-weight: $fontweight;
+font-size: 1rem;
+    padding: 6px;
+    margin:5px 10px;
+
+
+&:hover{
+    color: $primary_clr;
+    text-shadow:$textshadow; 
+}
+}
+    }
+
+    .searchInputList{
+        position: $absolute;
+        bottom: -25px;
+        width: 100%;
+        @include flex(flex,center,wrap,row);
+
+.searchInputItems{
+    @include flex(flex,space-around,wrap,row);
+    width: 25%;
+    min-width: fit-content;
+    background-color: $primary_clr;
+    align-items: $alignItems;
+    border:1px solid $primary_clr5;
+    border-radius: $border-radius;
+    padding:10px 0px;
+position: relative;
+
+    .icons{
+        width:1.5rem;
+        height: 1.5rem;
+        color:$primary_clr4;
+    cursor: $cursor;
+
+    &:hover {
+        color:$primary_clr6;
+    }
+        path{
+            stroke: $primary_clr4;
+        }
+    }
+
+    .icon_text{
+        color: $primary_clr4;
+        cursor: pointer;
+    }
+   
+}
+.searchInput{
+    border: $border;
+    outline: none;
+}
+    
+.searchBtn{
+    position:$relative;
+    right: 5px;
+    border-radius: $border-radius;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    border:1px solid $primary_clr5;
+    border-left:$border;
+    background-color:$primary_clr;
+    color: $primary_clr5;
+    padding: 5px;
+    cursor: $cursor;
+    &:hover{
+        color: $primary_clr6;
+    }
+}
+    }
+
+}
+
+
+
+.dateCalender{
+    position: $absolute;
+    top:47px;
+}
+
+
+.searchOptions{
+    background-color: $primary_clr;
+width: 250px;
+    position: $absolute;
+    top:47px;
+    @include flex(flex,none,nowrap,column);
+ 
+border: 1px solid $primary_clr6 ;
+border-radius: $border-radius;
+
+
+
+
+    .searchList{
+        @include flex(flex,space-between,nowrap,row);
+        border: 1px solid $primary_clr6 ;
+        border-radius: $border-radius;
+        padding: 10px;
+        margin: 10px;
+        align-items: $alignItems;
+
+
+
+        .searchItem{
+            color: $primary_clr4;
+            letter-spacing: 1px;
+        }
+        .counterBtn{
+            width:20px;
+            height:30px;
+            border-radius: $border-radius;
+            border: $border;
+            cursor: $cursor;
+        background-color: $border;
+        color: $primary_clr4;
+        font-weight: $fontweight;
+        font-size: 1rem;
+            padding: 6px;
+            margin:5px 10px;
+
+            &:hover{
+                transform: scale(1.5);
+                color: $primary_clr3;
+            }
+        }
+
+        .itemHeader{
+            color: $primary_bg_clr;
+        }
+    }
+
+
+}

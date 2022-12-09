@@ -1,0 +1,60 @@
+.FM {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: rgb(0, 69, 121);
+  width: 100%;
+  height: 100%;
+  text-transform: capitalize;
+}
+.FM .listItems {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  color: white;
+  padding-top: 30px;
+  align-items: center;
+}
+.FM .listItems h1 {
+  font-size: 24px;
+}
+.FM .listItems p {
+  word-spacing: 2px;
+}
+.FM .listItems .inputForm {
+  padding-top: 20px;
+}
+.FM .listItems .inputForm input {
+  width: 300px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid rgba(224, 212, 12, 0.9803921569);
+  padding: 5px;
+}
+.FM .listItems .inputForm .inputBtn {
+  padding: 5px;
+  height: 40px;
+  margin: 0px 5px;
+  color: rgb(0, 69, 121);
+  font-weight: bold;
+  background-color: white;
+  border-radius: 6px;
+  border: transparent;
+  cursor: pointer;
+}
+.FM .listItems .inputForm .inputBtn:hover {
+  color: #2b7db3;
+  box-shadow: 0px 0px 5px 0px white;
+}
+.FM .listItems .checkboxContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: line-through;
+}
+.FM .listItems .checkboxContainer input {
+  padding: 0px 10px;
+  width: 15px;
+  height: 10px;
+}/*# sourceMappingURL=footermail.css.map */

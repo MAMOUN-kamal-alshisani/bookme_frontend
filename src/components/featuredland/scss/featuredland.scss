@@ -1,0 +1,62 @@
+@import "../../../variables/_variables.scss";
+
+.FListProperty {
+  @include flex(flex, space-between, nowrap, row);
+  width: 100%;
+  max-width: 1024px;
+  gap: 10px;
+  margin-bottom: 20px;
+  .FListItem {
+    width: 100%;
+    max-width: 1024px;
+    @include flex(flex, space-between, wrap, column);
+    gap: 10px;
+    word-spacing: 2px;
+
+
+    .fpImg {
+        flex: 1;
+        object-fit: $objfit;
+        height: 300px;
+        width: 100%;
+        border-radius: $border-radius;
+      }
+    
+      .fpName{
+    // color: $primary_bg_clr;
+        font-size: 24px;
+      }
+      .fpCity{
+        color: $primary_clr4;
+        font-size: 16px;
+      }
+      .fpPrice{
+        color: $primary_clr3;
+      }
+
+.fpRating{
+padding-left: 5px;
+    .fpBtn{
+        font-weight: bold;
+        width: 35px;
+        height: 25px;
+        // cursor: $cursor;
+    color: white;
+        background-color:#607d8b;
+        border:transparent ;
+        border-radius: $border-radius;
+      }
+.fpGrade{
+    color: grey;
+    margin: 7px;
+
+}
+
+}
+
+
+
+  }
+
+ 
+}

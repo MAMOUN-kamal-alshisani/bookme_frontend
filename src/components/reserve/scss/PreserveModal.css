@@ -1,0 +1,140 @@
+.reserver {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.149);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  overflow: auto;
+}
+.reserver .reserveModalContainer {
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.7803921569);
+  border: 1px solid #004979;
+  width: 750px;
+  height: 500px;
+  overflow-x: auto;
+}
+.reserver .reserveModalContainer .iconDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: absolute;
+  top: 40px;
+  right: 80px;
+}
+.reserver .reserveModalContainer .closeIcon {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+.reserver .reserveModalContainer .closeIcon:hover {
+  border: 2px solid crimson;
+}
+.reserver .reserveModalContainer .closeIcon path {
+  stroke: white;
+  transition: ease-in-out 1s;
+}
+.reserver .reserveModalContainer .closeIcon:hover path {
+  stroke: crimson;
+}
+.reserver .reserveModalContainer .SroomHeader {
+  padding-left: 10px;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+.reserver .reserveModalContainer .roomList {
+  padding: 40px;
+  display: flex;
+  width: 400px;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  box-shadow: 0px 0px 2px 0px grey;
+}
+.reserver .reserveModalContainer .roomList .roomItems {
+  letter-spacing: 1px;
+}
+.reserver .reserveModalContainer .roomList .roomItems .roomItems p, .reserver .reserveModalContainer .roomList .roomItems h1, .reserver .reserveModalContainer .roomList .roomItems h2 {
+  padding: 5px;
+}
+.reserver .reserveModalContainer .roomList .roomItems .roomTitle {
+  color: rgb(0, 133, 249);
+  text-shadow: 1px 0px 0px grey;
+}
+.reserver .reserveModalContainer .roomList .roomItems .roomDesc {
+  color: white;
+  text-shadow: 1px 0px 0px grey;
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+.reserver .reserveModalContainer .roomList .roomItems .roomMax {
+  padding-bottom: 5px;
+  color: #3f51b5;
+  font-weight: bold;
+  text-shadow: 1px 0px 0px rgb(16, 66, 203);
+}
+.reserver .reserveModalContainer .roomList .roomN {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+  font-weight: bold;
+  color: crimson;
+}
+.reserver .reserveModalContainer .roomList .roomN input.checkbox {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.reserver .reserveModalContainer .btnContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 10px;
+}
+.reserver .reserveModalContainer .btnContainer .reserveBtn {
+  width: 100px;
+  height: 27px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid grey;
+  background-color: rgb(0, 69, 121);
+}
+.reserver .reserveModalContainer .btnContainer .reserveBtn:hover {
+  background-color: #2b7db3;
+  color: white;
+  border: 1px solid grey;
+}
+.reserver .reserveModalContainer .btnContainer .closeBtn {
+  width: 100px;
+  height: 27px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid grey;
+  background-color: #893948;
+}
+.reserver .reserveModalContainer .btnContainer .closeBtn:hover {
+  background-color: crimson;
+}/*# sourceMappingURL=PreserveModal.css.map */

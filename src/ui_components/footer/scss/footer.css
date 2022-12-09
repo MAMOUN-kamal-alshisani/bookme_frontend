@@ -1,0 +1,23 @@
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+footer .fLists {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1024px;
+}
+footer .listMenu {
+  padding: 10px;
+}
+footer .copyright {
+  text-align: center;
+}/*# sourceMappingURL=footer.css.map */

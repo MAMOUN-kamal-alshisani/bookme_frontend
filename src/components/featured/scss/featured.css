@@ -1,0 +1,35 @@
+.featureContainer {
+  z-index: 1;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: unset;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 20px;
+}
+.featureContainer .featureList {
+  position: relative;
+  width: 32%;
+  color: white;
+  overflow: hidden;
+}
+.featureContainer .featureList .featureTexts {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.featureContainer .featureList .featureImg {
+  filter: blur(1px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.featureContainer .featureList .featureImg:hover {
+  filter: blur(0px);
+}/*# sourceMappingURL=featured.css.map */

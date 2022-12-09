@@ -1,0 +1,24 @@
+.signUpHeader {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.signUpBtn {
+  width: 200px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #1d2429;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.signUpBtn:hover {
+  background-color: #2f353a;
+}
+.signUpBtn:disabled {
+  opacity: 0.5;
+  background-color: #1d2429;
+  color: white;
+}/*# sourceMappingURL=signUp.css.map */

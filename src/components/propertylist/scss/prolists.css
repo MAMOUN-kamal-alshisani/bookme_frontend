@@ -1,0 +1,41 @@
+.properylist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1024px;
+  gap: 10px;
+}
+.properylist .listsItem {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  border-radius: 6px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.properylist .listsItem:hover {
+  background-color: rgba(128, 128, 128, 0.187);
+}
+.properylist .listsItem .pItemImg {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.properylist .listsItem .listTitles {
+  padding: 0px 5px;
+  letter-spacing: 1px;
+}
+.properylist .listsItem .listTitles h1 {
+  font-size: 18px;
+  padding-bottom: 4px;
+  color: crimson;
+}
+.properylist .listsItem .listTitles h3 {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+}/*# sourceMappingURL=prolists.css.map */

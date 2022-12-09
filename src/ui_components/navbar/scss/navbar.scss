@@ -1,0 +1,46 @@
+@import '../../../variables/variables';
+
+.navbar{
+    font-family: 'Courier New', Courier, monospace;
+    height: 10vh;
+    min-height: fit-content;
+    background-color: $primary_bg_clr;
+@include flex(flex,center,nowrap,none);
+
+
+.navbar_container{
+    width: 100%;
+    max-width: 1024px;
+    color: $primary_clr;
+    @include flex(flex,space-between,wrap,none);
+    align-items: center;
+
+    .logo{
+        font-weight: $fontweight;
+        font-size: 22px;
+    }
+    .navList{
+padding: 10px;
+
+.navBtn{
+    padding: 6px;
+    border-radius: 6px;
+    margin:0px 10px;
+    border: $border;
+    cursor: $cursor;
+    letter-spacing: 2px;
+    font-weight: $fontweight;
+    text-transform: capitalize;
+background-color: $primary_clr;
+color: $primary_bg_clr;
+&:hover{
+    // transform: scale(1.1);
+    box-shadow:0px 0px 5px 0px $primary_clr;
+    color: $primary_bg_clr2;
+}
+}
+    }
+}
+}
+
+

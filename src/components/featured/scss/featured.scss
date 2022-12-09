@@ -1,0 +1,39 @@
+@import '../../../variables/_variables.scss';
+
+.featureContainer{
+    z-index: 1;
+    width: 100%;
+    max-width: 1024px;
+    @include flex(flex,unset ,nowrap,row);
+    gap: 20px;
+
+.featureList{
+    position: relative;
+    width: 32%;
+color: white;
+overflow:hidden ;
+.featureTexts{
+position: absolute;
+top:20px;
+left:20px
+}
+
+
+    .featureImg{
+        filter: blur(1px);
+     object-fit: cover;
+    width: 100%;
+    min-width: 200px;
+       height: 250px;
+       border-radius: 10px;
+       cursor: pointer;
+transition: 0.5s ease-out;
+       &:hover{
+
+        filter: blur(0px);
+       }
+    }
+
+}
+
+}

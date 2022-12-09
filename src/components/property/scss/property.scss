@@ -1,0 +1,224 @@
+@import '../../../variables/_variables.scss';
+
+
+
+.propertyContainer{
+    letter-spacing: $textspace;
+    @include flex(flex,center,nowrap,row);
+text-transform: $captext;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    // max-width: 1024px;
+
+.inputContainer{
+ position: sticky;
+ z-index: 3;
+
+ top: 20px;
+    @include flex(flex,space-between,wrap,column);
+    gap: 10px;
+    margin-right: 20px;
+    width: fit-content;
+    min-width: 200px;
+    height: fit-content;
+    border-radius:$border-radius ;
+    padding: 10px;
+    background-color:$primary_clr11;
+  color: $primary_clr;
+    .formItemsContainer{
+        @include flex(flex,space-between,nowrap,column);
+        padding: 5px 0px;
+    label{
+
+        padding:5px 0px
+    }
+    input{
+    height: 30px
+    }
+    
+
+.dateCalender{
+    z-index: 3;
+    position: absolute;
+    top:180px;
+    // width: 300px
+    
+}
+
+    }
+
+
+    .optionsInput{
+        @include flex(flex,space-between,nowrap,row);
+        align-items:$alignItems;
+        input{
+            margin-left: 60px;
+            width:60px;
+    height: 30px
+
+        }
+    }
+
+    .inputSearchBtn{
+margin-top: 20px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: $border-radius;
+        background: #9e9e9e;
+    color: white;
+    border: 1px solid white;
+
+    &:hover{
+        background: #bebcbc;
+    }
+    }
+}
+    
+
+.cardContianer{
+   
+    position: relative;
+    z-index: 1;
+    @include flex(flex,space-between,wrap,column);
+    width: 75%;
+    min-width: 40%;
+    gap: 20px;
+    border-radius:$border-radius ;
+
+    .cardItems{
+        @include flex(flex,center,nowrap,row);
+        // padding:1px;
+        width:fit-content;
+        gap: 20px;
+border: 1px solid $primary_clr8;
+border-radius: 6px;
+        .imgContainer{
+            width:300px;
+height: 100%;
+min-height: fit-content;
+
+
+.Cardimg{
+    border-radius:$border-radius ;
+    height: 100%;
+width:300px;
+
+}
+        }
+
+
+.cardTextContainer{
+    @include flex(flex,space-between,nowrap,row);
+width:500px;
+
+.cardText{
+    width:100%;;
+    word-spacing: $textspace;
+    padding: 10px 10px;
+
+
+    .cardText h1,
+    p,
+    button,
+    h2{
+        margin: 8px 0px;
+    }
+
+h1{
+    color: $primary_bg_clr2;
+}
+
+h2{
+    font-size: 17px;
+    font-weight: bold;
+    // color:$primary_clr6
+}
+
+.ptyLocation{
+    color: $primary_clr4;
+}
+
+.ptyCnlFeatures{
+    color:$primary_clr9;
+    font-weight: bold;
+}
+
+.ptyCnlFeaturesDesc{
+
+    color:$primary_bg_clr
+}
+    button{
+        border-radius: $border-radius;
+        border: $border;
+        padding: 5px;
+        background-color:$primary_clr3;
+        color: white
+    }
+}
+
+
+}
+
+
+
+
+.gradeTextContainer{
+    @include flex(flex,space-between,nowrap,column);
+padding:10px;
+    .gradeDiv{
+    @include flex(flex,space-around,nowrap,row);
+font-weight: bold;
+font-size: large;
+
+.rtBtn{
+width:30px;
+height:25px;
+    background-color: $primary_bg_clr;
+    color:$primary_clr;
+    border: $border;
+    border-radius: $border-radius;
+}
+    }
+    .feeContainer{
+        // margin-right:60px
+
+
+        p:first-child{
+font-size: larger;
+font-weight: bold;
+color: $primary_clr3;
+text-align: end;
+        }
+
+        p:nth-child(2){
+width: 182px;
+color: $primary_clr4;
+padding-bottom: 10px;
+        }
+
+
+        .availableBtn{
+            width: 150px;
+            height: 30px;
+            background-color: $primary_bg_clr;
+            color: $primary_clr;
+            border-radius:$border-radius ;
+            border: $border;
+            cursor: $cursor;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            margin-left:20px;
+            font-weight:500;
+
+            &:hover{
+            background-color: $primary_bg_clr2;
+
+            }
+        }
+    }
+}
+
+    }
+}
+}

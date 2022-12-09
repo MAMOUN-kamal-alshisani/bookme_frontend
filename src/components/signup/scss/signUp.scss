@@ -1,0 +1,30 @@
+@import '../../../variables/_variables.scss';
+
+.signUpHeader{
+color: white;
+letter-spacing: 1px;
+}
+
+.signUpBtn{
+
+    width: 200px;
+    height:40px;
+    border: 1px solid white;
+    border-radius: $border-radius;
+    cursor: $cursor;
+font-size:15px;
+background-color: #1d2429;
+color: white;
+letter-spacing: 0.5px;
+    &:hover{
+
+// box-shadow: 0px 0px 10px 0px white;
+background-color: #2f353a;
+    }
+
+&:disabled{
+opacity: 0.5;
+    background-color: #1d2429;
+    color: white; 
+}
+}

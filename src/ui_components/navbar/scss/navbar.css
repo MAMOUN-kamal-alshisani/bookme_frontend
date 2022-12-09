@@ -1,0 +1,45 @@
+.navbar {
+  font-family: "Courier New", Courier, monospace;
+  height: 10vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background-color: rgb(0, 69, 121);
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: none;
+}
+.navbar .navbar_container {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: none;
+  align-items: center;
+}
+.navbar .navbar_container .logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+.navbar .navbar_container .navList {
+  padding: 10px;
+}
+.navbar .navbar_container .navList .navBtn {
+  padding: 6px;
+  border-radius: 6px;
+  margin: 0px 10px;
+  border: transparent;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: white;
+  color: rgb(0, 69, 121);
+}
+.navbar .navbar_container .navList .navBtn:hover {
+  box-shadow: 0px 0px 5px 0px white;
+  color: #2b7db3;
+}/*# sourceMappingURL=navbar.css.map */

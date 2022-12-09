@@ -1,0 +1,204 @@
+.propertyContainer {
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  text-transform: capitalize;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.propertyContainer .inputContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 3;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: rgba(17, 17, 17, 0.7882352941);
+  color: white;
+}
+.propertyContainer .inputContainer .formItemsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.propertyContainer .inputContainer .formItemsContainer label {
+  padding: 5px 0px;
+}
+.propertyContainer .inputContainer .formItemsContainer input {
+  height: 30px;
+}
+.propertyContainer .inputContainer .formItemsContainer .dateCalender {
+  z-index: 3;
+  position: absolute;
+  top: 180px;
+}
+.propertyContainer .inputContainer .optionsInput {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+.propertyContainer .inputContainer .optionsInput input {
+  margin-left: 60px;
+  width: 60px;
+  height: 30px;
+}
+.propertyContainer .inputContainer .inputSearchBtn {
+  margin-top: 20px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #9e9e9e;
+  color: white;
+  border: 1px solid white;
+}
+.propertyContainer .inputContainer .inputSearchBtn:hover {
+  background: #bebcbc;
+}
+.propertyContainer .cardContianer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 75%;
+  min-width: 40%;
+  gap: 20px;
+  border-radius: 6px;
+}
+.propertyContainer .cardContianer .cardItems {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 20px;
+  border: 1px solid #849095;
+  border-radius: 6px;
+}
+.propertyContainer .cardContianer .cardItems .imgContainer {
+  width: 300px;
+  height: 100%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+.propertyContainer .cardContianer .cardItems .imgContainer .Cardimg {
+  border-radius: 6px;
+  height: 100%;
+  width: 300px;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 500px;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText {
+  width: 100%;
+  word-spacing: 1px;
+  padding: 10px 10px;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText .cardText h1,
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText p,
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText button,
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText h2 {
+  margin: 8px 0px;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText h1 {
+  color: #2b7db3;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText h2 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText .ptyLocation {
+  color: grey;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText .ptyCnlFeatures {
+  color: #25af04;
+  font-weight: bold;
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText .ptyCnlFeaturesDesc {
+  color: rgb(0, 69, 121);
+}
+.propertyContainer .cardContianer .cardItems .cardTextContainer .cardText button {
+  border-radius: 6px;
+  border: transparent;
+  padding: 5px;
+  background-color: crimson;
+  color: white;
+}
+.propertyContainer .cardContianer .cardItems .gradeTextContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 10px;
+}
+.propertyContainer .cardContianer .cardItems .gradeTextContainer .gradeDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: large;
+}
+.propertyContainer .cardContianer .cardItems .gradeTextContainer .gradeDiv .rtBtn {
+  width: 30px;
+  height: 25px;
+  background-color: rgb(0, 69, 121);
+  color: white;
+  border: transparent;
+  border-radius: 6px;
+}
+.propertyContainer .cardContianer .cardItems .gradeTextContainer .feeContainer p:first-child {
+  font-size: larger;
+  font-weight: bold;
+  color: crimson;
+  text-align: end;
+}
+.propertyContainer .cardContianer .cardItems .gradeTextContainer .feeContainer p:nth-child(2) {
+  width: 182px;
+  color: grey;
+  padding-bottom: 10px;
+}
+.propertyContainer .cardContianer .cardItems .gradeTextContainer .feeContainer .availableBtn {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(0, 69, 121);
+  color: white;
+  border-radius: 6px;
+  border: transparent;
+  cursor: pointer;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.propertyContainer .cardContianer .cardItems .gradeTextContainer .feeContainer .availableBtn:hover {
+  background-color: #2b7db3;
+}/*# sourceMappingURL=property.css.map */
