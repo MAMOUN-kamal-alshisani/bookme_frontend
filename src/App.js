@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
 import Property from "./components/property/property.jsx";
 import SearchPrty from "./components/searched_stay_prty/searched_prty";

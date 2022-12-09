@@ -3,7 +3,6 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./scss/login.css";
-
 import { HiArrowSmRight } from "react-icons/hi";
 
 function Login() {

@@ -1,9 +1,8 @@
-// import "bootstrap/dist/css/bootstrap.min.css"
 import { FaArrowRight } from 'react-icons/fa'
 import { FaArrowLeft } from 'react-icons/fa'
 import { GrClose } from 'react-icons/gr'
 
-import {Button,Modal} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import './scss/searched.css'
 function Modals({basicModal,
     toggleShow,

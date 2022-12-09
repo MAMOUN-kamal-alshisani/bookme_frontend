@@ -3,7 +3,7 @@ import { AuthContext } from "../../context/auth_context";
 import {useState,useContext} from 'react'
 import Login from '../../components/signin/login';
 import SignUp from '../../components/signup/signUp';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 function Navbar(){
 const {username} = useContext(AuthContext)  

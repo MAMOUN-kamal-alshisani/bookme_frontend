@@ -3,7 +3,7 @@ import { GrClose } from "react-icons/gr";
 import { useState, useEffect, useContext } from "react";
 import { SearchContext } from "../../context/searchcontext";
 import axios from "axios";
-function ReserverPt({ setOpenReserveModal, prtyId ,fullprice,reservedDays}) {
+function ReserverPt({ setOpenReserveModal, prtyId}) {
   const [api, setApi] = useState("");
   const [selectedRoom, setSelectRoom] = useState([]);
   const { date } = useContext(SearchContext);

@@ -1,8 +1,6 @@
 import "./scss/signUp.css";
 import { HiArrowSmRight } from "react-icons/hi";
-// import { AuthContext } from "../../context/auth_context";
-import { useState, useContext, useEffect } from "react";
-// import { IoLogoGoogle } from 'react-icons/io5';
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 function SignUp() {

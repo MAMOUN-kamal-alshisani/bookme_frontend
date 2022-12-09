@@ -1,5 +1,4 @@
 import "./scss/header.css";
-// import { MdHotel,IoAirplaneSharp ,GiCityCar,RiTaxiLine,GrAttraction,SlCalender,MdPersonAdd} from 'react-icons/all'
 import { MdHotel } from "react-icons/md";
 import { IoAirplaneSharp } from "react-icons/io5";
 import { GiCityCar } from "react-icons/gi";

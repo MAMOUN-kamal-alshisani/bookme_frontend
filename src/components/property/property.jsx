@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
-// import { SlCalender } from "react-icons/sl";
 import FooterMail from "../../ui_components/footer_mail_list/footermail";
 import Footer from "../../ui_components/footer/footer";
 import axios from "axios";
