@@ -11,7 +11,7 @@ function ReserverPt({ setOpenReserveModal, prtyId}) {
   // console.log(api);
   useEffect(() => {
     const fetchApi = async (req, res) => {
-      const url = `https://bookme.onrender.com/api/hotel/room/${prtyId}`;
+      const url = `https://bookme.onrender.com/api/hotel/room/${prtyId?prtyId:''}`;
 
       try {
         const data = await axios.get(url);
@@ -39,8 +39,8 @@ function ReserverPt({ setOpenReserveModal, prtyId}) {
 
   const reservedDates = getDatesInRange(date[0].startDate, date[0].endDate);
   const isAvailable = (roomNumber) => {
-    const isFound = roomNumber?.unavailableDates?.some((date) => {
-      reservedDates?.includes(new Date(date).getTime());
+    const isFound = roomNumber?.unavailableDates.some((date) => {
+      reservedDates?reservedDates.includes(new Date(date).getTime()):'' ;
     });
     return !isFound;
   };
@@ -56,7 +56,7 @@ function ReserverPt({ setOpenReserveModal, prtyId}) {
    return setSelectRoom(() =>
       checked
         ? [...selectedRoom, values] 
-        : selectedRoom.filter((item) => item != values)
+        : selectedRoom.filter((item) => item !== values)
     );
 
    

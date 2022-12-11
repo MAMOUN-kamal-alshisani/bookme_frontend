@@ -46,20 +46,20 @@ function SearchPrty() {
   const [openReserveModal,setOpenReserveModal]= useState(false)
   useEffect(() => {
     // setLoading(true)
-
+    const fetchApi = async (req, res) => {
+      const url = `https://bookme.onrender.com/api/hotel/fetchhotel/${path}`;
+  
+      try {
+        const data = await axios.get(url); 
+        setApi(data.data); 
+      } catch (err) { 
+        console.log(err); 
+      } 
+    }; 
     fetchApi();
   }, []);
 
-  const fetchApi = async (req, res) => {
-    const url = `https://bookme.onrender.com/api/hotel/fetchhotel/${path}`;
 
-    try {
-      const data = await axios.get(url); 
-      setApi(data.data); 
-    } catch (err) { 
-      console.log(err); 
-    } 
-  }; 
 const {date,person}  = useContext(SearchContext); 
 const {username}  = useContext(AuthContext); 
 

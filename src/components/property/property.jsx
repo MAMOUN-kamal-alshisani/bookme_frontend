@@ -45,12 +45,12 @@ function Property() {
     }
   }, [Location]);
 
-  useEffect(() => {
-    // setLoading(true)
+  // useEffect(() => {
+  //   // setLoading(true)
 
   
-    fetchApi();
-  }, []);
+  //   fetchApi();
+  // }, []);
 
   
   const fetchApi = async (req, res) => {

@@ -17,7 +17,7 @@ console.log(CPassword);
   };
 
   const signUpHandler = async () => {
-    if(credentials.username && credentials.password && credentials.email != '' &&null && undefined){
+    if(credentials.username && credentials.password && credentials.email !== '' &&null && undefined){
       try {
         const res = await axios.post("/auth/signup", credentials);
         console.log(res);

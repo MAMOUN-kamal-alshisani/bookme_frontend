@@ -20,7 +20,7 @@ function Login() {
 
   const loginHandler = async () => {
     dispatch({ type: "LOGIN_START" });
- if(credentials.username && credentials.password != ''){
+ if(credentials.username && credentials.password !== ''){
   try {
   
     const res = await axios.post("/auth/signin", credentials);
@@ -46,7 +46,7 @@ function Login() {
             id="username"
             name="username"
             placeholder="Enter username"
-            onChange={handleChange}
+            onChange={()=>handleChange}
             value={credentials.username}
 
             required
