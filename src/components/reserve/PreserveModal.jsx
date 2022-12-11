@@ -40,7 +40,7 @@ function ReserverPt({ setOpenReserveModal, prtyId}) {
   const reservedDates = getDatesInRange(date[0].startDate, date[0].endDate);
   const isAvailable = (roomNumber) => {
     const isFound = roomNumber?.unavailableDates.some((date) => {
-      reservedDates?reservedDates.includes(new Date(date).getTime()):'' ;
+      reservedDates?.includes(new Date(date).getTime());
     });
     return !isFound;
   };
