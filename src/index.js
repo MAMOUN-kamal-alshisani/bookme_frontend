@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
-import App from './src/App';
-import reportWebVitals from './src/reportWebVitals';
-import {SearchContextProvider} from './src/context/searchcontext'
-import {AuthContextProvider} from './src/context/auth_context'
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import {SearchContextProvider} from './context/searchcontext'
+import {AuthContextProvider} from './context/auth_context'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
