@@ -79,12 +79,12 @@ function Header({ type }) {
   };
 
   const decreaseCounter = (counter, cb) => {
-    if (counter == adult || counter == room) {
+    if (counter === adult || counter === room) {
       if (counter > 1) {
         cb(() => counter - 1);
       }
     }
-    if (counter == child) {
+    if (counter === child) {
       if (counter > 0) {
         cb(() => counter - 1);
       }
@@ -94,7 +94,7 @@ function Header({ type }) {
 
   const { dispatch } = useContext(SearchContext);
   const destinationHandler = () => {
-    if (destination != "") {
+    if (destination !== "") {
       dispatch({ type: "NEW_SEARCH", payload: { destination, date, person } });
       navigate("/property", { state: { destination, date, person } });
     } else {

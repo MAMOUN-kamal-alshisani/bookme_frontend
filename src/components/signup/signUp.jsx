@@ -11,61 +11,62 @@ function SignUp() {
     email: "",
   });
   const [CPassword, setCPassword] = useState("");
-console.log(CPassword);
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
   };
 
   const signUpHandler = async () => {
-    if(credentials.username && credentials.password && credentials.email !== '' &&null && undefined){
+    // if(credentials.username && credentials.password && credentials.email !== '' &&null && undefined){
       try {
-        const res = await axios.post("api/auth/signup", credentials);
+        const res = await axios.post("/api/auth/signup", credentials);
         console.log(res);
         alert("successful signUp!");
         navigate("/login");
       } catch (err) {
-        alert(err);
+        alert('an error occured while signing up!');
         console.log(err);
       }
 
-    }
+      alert('username already exists')
+    // }
 
   };
 
-  const ComparePassWord = () => {
-    let SignUpBtn = document.querySelector(".signUpBtn");
-    let cPassword = document.querySelector("#cpassword");
-    let password = document.querySelector("#password");
-
-    if (cPassword.focus = true && credentials.password !== CPassword) {
-      SignUpBtn.disabled = true;
-      setTimeout(()=>{
-
-        return (cPassword.style.outlineColor = "red");
-
-      },4000)
-    }
-
-     else if(cPassword.focus = true && credentials.password == CPassword){
-      SignUpBtn.disabled = false;
-      cPassword.style.outlineColor = "green"
-      setTimeout(()=>{
-     
-        return ( cPassword.style.outlineColor = "blue");
-
-      },1000)
-    }
-
-
-  if (password.focus = true && credentials.password !== CPassword) {
-        SignUpBtn.disabled = true;
-      
-          return (password.style.outlineColor = "red");
-        
-      }
-  };
-
+  
   useEffect(() => {
+    const ComparePassWord = () => {
+      let SignUpBtn = document.querySelector(".signUpBtn");
+      let cPassword = document.querySelector("#cpassword");
+      let password = document.querySelector("#password");
+  
+      if (cPassword.focus === true && credentials.password !== CPassword) {
+        SignUpBtn.disabled = true;
+        setTimeout(()=>{
+  
+          return (cPassword.style.outlineColor = "red");
+  
+        },4000)
+      }
+  
+       else if(cPassword.focus === true && credentials.password === CPassword){
+        SignUpBtn.disabled = false;
+        cPassword.style.outlineColor = "green"
+        setTimeout(()=>{
+       
+          return ( cPassword.style.outlineColor = "blue");
+  
+        },1000)
+      }
+  
+  
+    if (password.focus === true && credentials.password !== CPassword) {
+          SignUpBtn.disabled = true;
+        
+            return (password.style.outlineColor = "red");
+          
+        }
+    };
+  
     ComparePassWord();
   }, [credentials.password, CPassword]);
   return (

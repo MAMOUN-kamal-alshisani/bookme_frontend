@@ -47,7 +47,7 @@ function SearchPrty() {
   useEffect(() => {
     // setLoading(true)
     const fetchApi = async (req, res) => {
-      const url = `https://bookme.onrender.com/api/hotel/fetchhotel/${path}`;
+      const url = `https://bookme.onrender.com/api/hotel/fetchhotel/${path|| ''}`;
   
       try {
         const data = await axios.get(url); 
@@ -57,7 +57,7 @@ function SearchPrty() {
       } 
     }; 
     fetchApi();
-  }, []);
+  }, [path]);
 
 
 const {date,person}  = useContext(SearchContext); 
