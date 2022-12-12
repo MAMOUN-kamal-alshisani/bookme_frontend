@@ -23,7 +23,7 @@ function Login() {
  if(credentials.username && credentials.password !== ''){
   try {
   
-    const res = await axios.post("/auth/signin", credentials);
+    const res = await axios.post("/api/auth/signin", credentials);
     dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
     navigate("/");
 

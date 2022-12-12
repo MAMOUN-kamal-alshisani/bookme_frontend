@@ -9,7 +9,7 @@ const [loading,setLoading] = useState(false)
     useEffect(()=>{
         // setLoading(true)
         const fetchApi = async(req,res)=>{
-            const url = `/hotel/getByCount?cities=Amman,Dubai,Berlin`
+            const url = `api/hotel/getByCount?cities=Amman,Dubai,Berlin`
             setLoading(true)
             
         try{

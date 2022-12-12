@@ -14,7 +14,7 @@ function PropertyList(){
             // setLoading(true)
          
             const fetchApi = async(req,res)=>{
-                const url = `/hotel/getByType`
+                const url = `api/hotel/getByType`
                 
             try{
                 const data = await axios.get(url)
