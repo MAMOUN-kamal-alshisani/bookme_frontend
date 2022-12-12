@@ -8,7 +8,7 @@ function FeaturedProperty(){
         // setLoading(true)
        
         const fetchApi = async(req,res)=>{
-            const url = `/api/hotel/fetchhotel?featured=true&limit=4`
+            const url = `api/hotel/fetchhotel?featured=true&limit=4`
          
         try{
             const data = await axios.get(url)

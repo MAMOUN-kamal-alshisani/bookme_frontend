@@ -46,7 +46,7 @@ function Login() {
             id="username"
             name="username"
             placeholder="Enter username"
-            onChange={()=>handleChange}
+            onChange={handleChange}
             value={credentials.username}
 
             required

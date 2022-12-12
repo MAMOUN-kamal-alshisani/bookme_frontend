@@ -9,21 +9,21 @@ function ReserverPt({ setOpenReserveModal, prtyId}) {
   const { date } = useContext(SearchContext);
 
   // console.log(api);
-  const fetchApi = async (req, res) => {
-    const url = `https://bookme.onrender.com/api/hotel/room/${prtyId?prtyId:''}`;
 
-    try {
-      const data = await axios.get(url);
-      setApi(data.data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
   useEffect(() => {
+    const fetchApi = async (req, res) => {
+      const url = `https://bookme.onrender.com/api/hotel/room/${prtyId}`;
   
+      try {
+        const data = await axios.get(url);
+        setApi(data.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
     fetchApi();
-  }, []);
+  }, [prtyId]);
 
   const getDatesInRange = (start, end) => {
     const startDate = new Date(start);
@@ -40,8 +40,8 @@ function ReserverPt({ setOpenReserveModal, prtyId}) {
 
   const reservedDates = getDatesInRange(date[0].startDate, date[0].endDate);
   const isAvailable = (roomNumber) => {
-    const isFound = roomNumber?.unavailableDates.some((date) => {
-     return reservedDates?.includes(new Date(date).getTime());
+    const isFound = roomNumber?.unavailableDates?.some((date) => {
+    return reservedDates?.includes(new Date(date)?.getTime());
     });
     return !isFound;
   };
