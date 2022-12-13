@@ -20,11 +20,11 @@ return(
 <h3 className="homeTitle">
 browse by property type
 </h3>
-{/* <PropertyList/>
+<PropertyList/>
 <h3 className="homeTitle">
 featured property
 </h3>
-<FeaturedProperty/> */}
+<FeaturedProperty/>
 <FooterMail/> 
 <Footer/> 
    </div>
