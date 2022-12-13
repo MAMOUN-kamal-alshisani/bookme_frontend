@@ -57,19 +57,50 @@ function PropertyList() {
         </>
       ) : (
         <>
-        {api?.map((item, i) => {
-            return (
-              <div className="listsItem" key={i}>
-                <img src={imgSrc[i]} alt={i} className="pItemImg" />
-                <div className="listTitles">
-                  <h1>{item?.type}</h1>
-                  <h3>
-                    {item?.count} {item?.type}
-                  </h3>
-                </div>
-              </div>
-            );
-          })}
+          <div className="listsItem">
+            <img
+              src="https://jooinn.com/images/hotel-1.jpg"
+              alt="1"
+              className="pItemImg"
+            />
+            <div className="listTitles">
+              <h1>Hotel</h1>
+              <h3>34 properties</h3>
+            </div>
+          </div>
+          <div className="listsItem">
+            <img
+              src="https://miro.medium.com/max/3200/1*PWELGI5uLVolWcF3FbJesg.jpeg"
+              alt="2"
+              className="pItemImg"
+            />
+            <div className="listTitles">
+              <h1>Mansions</h1>
+              <h3>145 properties</h3>
+            </div>
+          </div>
+          <div className="listsItem">
+            <img
+              src="https://tse1.mm.bing.net/th?id=OIP.dwfEOIyCCxXpWwdUoAuhWwHaIU&pid=Api&P=0"
+              alt="3"
+              className="pItemImg"
+            />
+            <div className="listTitles">
+              <h1>Apartments</h1>
+              <h3>50 properties</h3>
+            </div>
+          </div>
+          <div className="listsItem">
+            <img
+              src="https://tse2.mm.bing.net/th?id=OIP.LL8UedBemkguGwS0zNXPKwHaFj&pid=Api&P=0"
+              alt="4"
+              className="pItemImg"
+            />
+            <div className="listTitles">
+              <h1>Houses</h1>
+              <h3>46 properties</h3>
+            </div>
+          </div>
         </>
       )}
     </div>
