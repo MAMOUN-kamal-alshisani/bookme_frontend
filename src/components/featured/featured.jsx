@@ -2,7 +2,7 @@ import './scss/featured.css'
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 function Featured(){
-const [api,setApi] = useState({citie:['Amman', 'Dubai', 'Berlin'],list:[6, 4, 1]} ||[])
+const [api,setApi] = useState({cities:['Amman', 'Dubai', 'Berlin'],list:[6, 4, 1]} ||[])
 const [loading,setLoading] = useState(false)
 
     useEffect(()=>{
