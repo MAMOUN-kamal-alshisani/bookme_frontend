@@ -16,11 +16,11 @@ return(
    <Header/>
    <div className="homeMain">
     
-{/* <Featured/>
+<Featured/>
 <h3 className="homeTitle">
 browse by property type
 </h3>
-<PropertyList/>
+{/* <PropertyList/>
 <h3 className="homeTitle">
 featured property
 </h3>
