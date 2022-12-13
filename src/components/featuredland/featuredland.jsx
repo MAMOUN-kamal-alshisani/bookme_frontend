@@ -27,7 +27,7 @@ function FeaturedProperty(){
     return(
         <div className="FListProperty">
             
-            {api ?(<>
+            {api?(<>
              {api?.map(data=>{
                 return(
             <div className='FListItem' key={data?._id}>

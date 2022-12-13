@@ -11,6 +11,7 @@ function PropertyList(){
     
     
         useEffect(()=>{
+            // console.log(api);
             // setLoading(true)
          
             const fetchApi = async(req,res)=>{
@@ -32,7 +33,7 @@ function PropertyList(){
     return(
         
         <div className="properylist">
-        {api ?(<>
+        {api?(<>
         {api?.map((item,i)=>{ 
             return(
 <div className="listsItem" key={i}>
