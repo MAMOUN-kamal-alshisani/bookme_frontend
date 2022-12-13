@@ -16,7 +16,7 @@ return(
    <Header/>
    <div className="homeMain">
     
-<Featured/>
+{/* <Featured/>
 <h3 className="homeTitle">
 browse by property type
 </h3>
@@ -24,7 +24,7 @@ browse by property type
 <h3 className="homeTitle">
 featured property
 </h3>
-<FeaturedProperty/>
+<FeaturedProperty/> */}
 <FooterMail/> 
 <Footer/> 
    </div>
