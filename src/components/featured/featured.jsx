@@ -2,7 +2,7 @@ import './scss/featured.css'
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 function Featured(){
-const [api,setApi] = useState(null)
+const [api,setApi] = useState('' ||[])
 const [loading,setLoading] = useState(false)
 console.log(api);
 

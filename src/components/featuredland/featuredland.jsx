@@ -2,7 +2,7 @@ import './scss/featuredland.css'
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 function FeaturedProperty(){
-    const [api,setApi] = useState(null)
+    const [api,setApi] = useState('' || [])
 
     useEffect(()=>{
         // setLoading(true)
