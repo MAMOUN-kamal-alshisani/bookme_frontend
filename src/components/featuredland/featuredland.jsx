@@ -32,11 +32,11 @@ function FeaturedProperty(){
             <div className='FListItem' key={data?._id}>
                
 <img src={data?.placePicture || "http://livinator.com/wp-content/uploads/2015/10/thefirstferryin-blogspot.jpg"} alt="property1" className="fpImg"/>
-<span className="fpName">{data.title}</span>
-<span className="fpCity">{data.name}</span>
-<span className="fpPrice">starting from ${data.min_price}</span>
-{data.rating &&<div className='fpRating'>
-<button className="fpBtn">{data.rating}</button>
+<span className="fpName">{data?.title}</span>
+<span className="fpCity">{data?.name}</span>
+<span className="fpPrice">starting from ${data?.min_price}</span>
+{data?.rating &&<div className='fpRating'>
+<button className="fpBtn">{data?.rating}</button>
 <span className="fpGrade">legendary</span>
 </div>}
 </div>

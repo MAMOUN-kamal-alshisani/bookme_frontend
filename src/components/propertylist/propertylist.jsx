@@ -33,14 +33,14 @@ function PropertyList(){
         
         <div className="properylist">
         {api ?(<>
-        {api.map((item,i)=>{ 
+        {api?.map((item,i)=>{ 
             return(
 <div className="listsItem" key={i}>
       
     <img src={imgSrc[i]} alt={i} className="pItemImg"/>
     <div className="listTitles">
-        <h1>{item.type}</h1>
-        <h3>{item.count} {item.type}</h3>
+        <h1>{item?.type}</h1>
+        <h3>{item?.count} {item?.type}</h3>
     </div>
 
 </div>
