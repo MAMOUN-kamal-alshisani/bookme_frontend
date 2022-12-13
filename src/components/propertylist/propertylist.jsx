@@ -7,7 +7,7 @@ import axios from 'axios'
 function PropertyList(){
 
     const imgSrc = ["https://jooinn.com/images/hotel-1.jpg","https://miro.medium.com/max/3200/1*PWELGI5uLVolWcF3FbJesg.jpeg","https://tse1.mm.bing.net/th?id=OIP.dwfEOIyCCxXpWwdUoAuhWwHaIU&pid=Api&P=0","https://tse2.mm.bing.net/th?id=OIP.LL8UedBemkguGwS0zNXPKwHaFj&pid=Api&P=0"]
-    const [api,setApi] = useState('')
+    const [api,setApi] = useState([])
     
     
         useEffect(()=>{
