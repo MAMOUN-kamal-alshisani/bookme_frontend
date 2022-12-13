@@ -40,7 +40,7 @@ function PropertyList() {
 
   return (
     <div className="properylist">
-      {api ? (
+      {Array.isArray(api) ? (
         <>
           {api?.map((item, i) => {
             return (
