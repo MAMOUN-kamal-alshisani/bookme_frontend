@@ -44,18 +44,24 @@ function FeaturedProperty(){
 )
 })}
 
-</>):<div className='FListItem'>
+</>):
 
-<img src="http://livinator.com/wp-content/uploads/2015/10/prweb.jpg" alt="property1" className="fpImg"/>
-<span className="fpName">hustler uni hotel</span>
-<span className="fpCity">moonlight</span>
-<span className="fpPrice">starting from $1000</span>
 
-<div className='fpRating'>
-<button className="fpBtn">4.7</button>
+api?.map(data=>{
+    return(
+<div className='FListItem' key={data?._id}>
+   
+<img src={data?.placePicture || "http://livinator.com/wp-content/uploads/2015/10/thefirstferryin-blogspot.jpg"} alt="property1" className="fpImg"/>
+<span className="fpName">{data?.title}</span>
+<span className="fpCity">{data?.name}</span>
+<span className="fpPrice">starting from ${data?.min_price}</span>
+{data?.rating &&<div className='fpRating'>
+<button className="fpBtn">{data?.rating}</button>
 <span className="fpGrade">legendary</span>
-</div>
 </div>}
+</div>
+)
+})}
 
         </div>
     )

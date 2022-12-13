@@ -22,7 +22,6 @@ function PropertyList() {
   // console.log(api);
   useEffect(() => {
     // setLoading(true)
-
     const fetchApi = async (req, res) => {
       const url = `api/hotel/getByType`;
 
@@ -58,17 +57,19 @@ function PropertyList() {
         </>
       ) : (
         <>
-          <div className="listsItem">
-            <img
-              src="https://tse1.mm.bing.net/th?id=OIP.tx40kwrZe2vjfAYwE8xAJQHaE7&pid=Api&P=0"
-              alt="1"
-              className="pItemImg"
-            />
-            <div className="listTitles">
-              <h1>propreties</h1>
-              <h3>00 properties</h3>
-            </div>
-          </div>
+        {api?.map((item, i) => {
+            return (
+              <div className="listsItem" key={i}>
+                <img src={imgSrc[i]} alt={i} className="pItemImg" />
+                <div className="listTitles">
+                  <h1>{item?.type}</h1>
+                  <h3>
+                    {item?.count} {item?.type}
+                  </h3>
+                </div>
+              </div>
+            );
+          })}
         </>
       )}
     </div>
