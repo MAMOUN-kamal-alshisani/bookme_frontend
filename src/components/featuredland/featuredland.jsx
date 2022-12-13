@@ -26,6 +26,7 @@ function FeaturedProperty(){
 
     return(
         <div className="FListProperty">
+            
             {api ?(<>
              {api?.map(data=>{
                 return(
