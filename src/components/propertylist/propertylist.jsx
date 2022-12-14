@@ -23,7 +23,7 @@ function PropertyList() {
   useEffect(() => {
     // setLoading(true)
     const fetchApi = async (req, res) => {
-      const url = `api/hotel/getByType`;
+      const url = `https://bookme.onrender.com/api/hotel/getByType`;
 
       try {
         const data = await axios.get(url);

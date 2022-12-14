@@ -18,7 +18,7 @@ function SignUp() {
   const signUpHandler = async () => {
     // if(credentials.username && credentials.password && credentials.email !== '' &&null && undefined){
       try {
-        const res = await axios.post("/api/auth/signup", credentials);
+        const res = await axios.post("https://bookme.onrender.com/api/auth/signup", credentials);
         console.log(res);
         alert("successful signUp!");
         navigate("/login");
@@ -27,7 +27,6 @@ function SignUp() {
         console.log(err);
       }
 
-      alert('username already exists')
     // }
 
   };

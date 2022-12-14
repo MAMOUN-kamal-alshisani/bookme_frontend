@@ -8,7 +8,7 @@ const [loading,setLoading] = useState(false)
     useEffect(()=>{
         // setLoading(true)
         const fetchApi = async(req,res)=>{
-            const url = `api/hotel/getByCount?cities=Amman,Dubai,Berlin`
+            const url = `https://bookme.onrender.com/api/hotel/getByCount?cities=Amman,Dubai,Berlin`
             setLoading(true)
             
         try{

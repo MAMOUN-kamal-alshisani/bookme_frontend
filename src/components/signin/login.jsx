@@ -23,14 +23,14 @@ function Login() {
  if(credentials.username && credentials.password !== ''){
   try {
   
-    const res = await axios.post("/api/auth/signin", credentials);
+    const res = await axios.post("https://bookme.onrender.com/api/auth/signin", credentials);
     dispatch({ type: "LOGIN_SUCCESS", payload: res.data.details });
     navigate("/");
 
   } catch (err) {
 
     console.log(err);
-    dispatch({ type: "LOGIN_FAIL", payload: err.response.data });
+    dispatch({ type: "LOGIN_FAIL", payload: 'log-in faild due to unexpected error!' });
   }
   
  }
